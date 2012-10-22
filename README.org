@@ -2,14 +2,42 @@
 
 * Test for CI using Jenkins with Github
 
-** Jenkins
-   
-   On Mac, http://localhost:8080
 
-** Github
+** Components
+
+*** Jenkins
+   
+   on Mac, http://localhost:8080
+
+*** Github
 
    https://github.com/unionx/git-test
 
-** Maven
+*** Maven
 
    build a Java application
+
+
+** Setup Jenkins in /configure
+
+*** start and stop jenkins
+
+    launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.jenkins.plist
+
+    launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.jenkins.plist
+
+*** set up MAVEN_HOME
+
+*** set up JDK
+
+*** set up Git
+
+    install git plugin: /pluginManager/available, restart after installation
+
+*** start new project
+
+    Source Code Management: git
+
+    Build Triggers: poll SCM; Schedule: * * * * *
+    
+    Build: 
