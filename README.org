@@ -1,3 +1,15 @@
 #+STARTUP: showall
 
 * Test for CI using Jenkins with Github
+
+** Jenkins
+   
+   On Mac, http://localhost:8080
+
+** Github
+
+   https://github.com/unionx/git-test
+
+** Maven
+
+   build a Java application
